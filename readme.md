@@ -38,14 +38,63 @@ Evalúa la calidad del conjunto de datos identificando valores faltantes, incons
 3. **Informe de Análisis de la Calidad de Datos:** Documenta los resultados de tu análisis de calidad de datos, destacando cualquier problema y los pasos tomados para resolverlos.
 4. **Presentación Corta:** Crea una presentación concisa (máximo de 4 diapositivas) que resuma tus hallazgos del análisis de cohortes y las perspectivas clave obtenidas del EDA y el análisis de calidad de datos. Esta presentación debe ser adecuada para compartir con el equipo de IronHack Payments.
 
-<!-- ### Información Adicional
 
-IronHack Payments está emocionado de obtener perspectivas de este análisis de cohortes para tomar decisiones basadas en datos que puedan mejorar sus servicios financieros y la experiencia del usuario. Tu análisis jugará un papel crucial en la configuración de las estrategias futuras de IronHack Payments.
+# Solución del proyecto
 
-No dudes en contactar si tienes alguna pregunta o necesitas más aclaraciones sobre el proyecto. Una vez completado, programaremos una presentación o reunión remota para discutir tus hallazgos.
+## Estructura del proyecto
 
-Gracias por asumir este proyecto, y esperamos tus valiosas contribuciones.
+``` bash
+.
+├── Entorno Personal
+│   ├── Alejandro
+│   │   ├── EDA_cash.ipynb
+│   │   ├── EDA_fees.ipynb
+│   │   ├── historia_analisis_cohortes.ipynb
+│   │   └── ingresos_por_cohorte.ipynb
+│   ├── Anastasia
+│   │   ├── cash2.ipynb
+│   │   ├── cash.ipynb
+│   │   ├── fees.ipynb
+│   │   └── join.ipynb
+│   ├── Marc
+│   │   ├── Analisis Exploratorio CASH.ipynb
+│   │   ├── Analisis Exploratorio FEE.ipynb
+│   │   ├── joined (còpia).ipynb
+│   │   ├── joined.ipynb
+│   │   ├── unio.xlsx
+│   │   └── Untitled.ipynb
+│   └── Toni
+│       └── AnalisisCASH.ipynb
+├── Notebooks
+│   ├── analisis amount vs return_days_diff.ipynb
+│   └── ingresos_por_cohorte.ipynb
+├── project_dataset
+│   ├── cash_request.csv
+│   ├── fees_data.csv
+│   └── Lexique - Data Analyst.xlsx
+└── readme.md
 
-Saludos cordiales,
-Ejecutivo de IronHack -->
+```
 
+## Devtools 
+
+Herramientas necesarias para la ejecución del código:
+
+```
+Python 3.10.12
+Jupyter notebook
+```
+
+Módulos python necesarios:
+
+```
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==2.2.2
+plotly==5.22.0
+seaborn==0.13.2
+```
+
+## Análisis realizados
+
+## Conclusiones
