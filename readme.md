@@ -121,4 +121,8 @@ cohorte_month        Dinero adelantado por cohorte        Ingresos por cohorte
 2020-11                          5510.0                         320.0`
 ```
 
+### Tasa de incidentes
+
+Este análisis proporciona una visión clara de cómo las incidencias han fluctuado a lo largo de las diferentes cohortes y meses, lo que puede ser útil para identificar áreas de mejora o tendencias emergentes. Principalmente, observamos patrones interesantes en la frecuencia de incidencias a lo largo del tiempo. Desde la cohorte de noviembre de 2019, vemos que las tasas de incidencia se mantienen en niveles bajos, aunque algunas cohortes muestran una leve tendencia al alza a lo largo del tiempo. A partir de junio de 2020, las tasas de incidencia comienzan a variar significativamente, con algunos meses mostrando picos de incidencia, especialmente en los ultimos cohortes de septiembre a noviembre del 2020. Esto sugiere una posible evolución en la calidad del servicio o cambios en el comportamiento de los usuarios, cosa que se intentará descifrar mediante otros análisis más en profundidad.
+
 ## Conclusiones
