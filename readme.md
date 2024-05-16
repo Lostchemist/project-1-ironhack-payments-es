@@ -38,12 +38,11 @@ Evalúa la calidad del conjunto de datos identificando valores faltantes, incons
 3. **Informe de Análisis de la Calidad de Datos:** Documenta los resultados de tu análisis de calidad de datos, destacando cualquier problema y los pasos tomados para resolverlos.
 4. **Presentación Corta:** Crea una presentación concisa (máximo de 4 diapositivas) que resuma tus hallazgos del análisis de cohortes y las perspectivas clave obtenidas del EDA y el análisis de calidad de datos. Esta presentación debe ser adecuada para compartir con el equipo de IronHack Payments.
 
-
 # Solución del proyecto
 
 ## Estructura del proyecto
 
-``` bash
+```bash
 .
 ├── Entorno Personal
 │   ├── Alejandro
@@ -76,7 +75,7 @@ Evalúa la calidad del conjunto de datos identificando valores faltantes, incons
 
 ```
 
-## Devtools 
+## Devtools
 
 Herramientas necesarias para la ejecución del código:
 
@@ -96,5 +95,30 @@ seaborn==0.13.2
 ```
 
 ## Análisis realizados
+
+### Ingresos de fees por cohorte:
+
+Hemos identificado que los ingresos por comisiones se generan a partir de mayo de 2020. Esto sugiere una posible actualización en la plataforma, introduciendo comisiones en ciertas acciones.
+
+Con esta información en mente, hemos enfocado nuestro análisis en las transacciones con estatus **money_back** (devolución de dinero completada).
+
+A continuación, se presenta un análisis detallado de los ingresos generados por mes.
+
+```
+cohorte_month        Dinero adelantado por cohorte        Ingresos por cohorte
+2019-11                          131.0                          30.0
+2019-12                          65298.0                        1100.0
+2020-01                          20836.0                        455.0
+2020-02                          31442.0                        635.0
+2020-03	                         7690.0                         610.0
+2020-04	                         60712.0                        1525.0
+2020-05                          111872.0                       3780.0
+2020-06                          311324.0                       13870.0
+2020-07                          201434.0                       10695.0
+2020-08                          67385.0                        4925.0
+2020-09                          141138.0                       11185.0
+2020-10                          311375.0                       23220.0
+2020-11                          5510.0                         320.0`
+```
 
 ## Conclusiones
