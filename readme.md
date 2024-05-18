@@ -46,32 +46,29 @@ Evalúa la calidad del conjunto de datos identificando valores faltantes, incons
 .
 ├── Entorno Personal
 │   ├── Alejandro
-│   │   ├── EDA_cash.ipynb
-│   │   ├── EDA_fees.ipynb
-│   │   ├── historia_analisis_cohortes.ipynb
-│   │   └── ingresos_por_cohorte.ipynb
 │   ├── Anastasia
-│   │   ├── cash2.ipynb
-│   │   ├── cash.ipynb
-│   │   ├── fees.ipynb
-│   │   └── join.ipynb
+│   │   └── Resources
 │   ├── Marc
-│   │   ├── Analisis Exploratorio CASH.ipynb
-│   │   ├── Analisis Exploratorio FEE.ipynb
-│   │   ├── joined (còpia).ipynb
-│   │   ├── joined.ipynb
-│   │   ├── unio.xlsx
-│   │   └── Untitled.ipynb
 │   └── Toni
-│       └── AnalisisCASH.ipynb
+├── img
+├── Informe Análisis de Cohortes.pdf
+├── Informe Análisis Exploratorio.pdf
 ├── Notebooks
-│   ├── analisis amount vs return_days_diff.ipynb
-│   └── ingresos_por_cohorte.ipynb
+│   ├── 01-EDA.ipynb
+│   ├── 02-Retencion.ipynb
+│   ├── 03-Tasa-de-Incidencia.ipynb
+│   ├── 04-Ingresos-por-cohorte.ipynb
+│   ├── 05-Analisis amount vs return_days_diff.ipynb
+│   ├── 06-Weekday vs hour.ipynb
+│   └── merged_df.csv
 ├── project_dataset
+│   ├── ~$Lexique - Data Analyst.xlsx
 │   ├── cash_request.csv
 │   ├── fees_data.csv
 │   └── Lexique - Data Analyst.xlsx
-└── readme.md
+├── readme.md
+└── req.txt
+
 
 ```
 
