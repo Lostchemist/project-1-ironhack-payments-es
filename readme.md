@@ -96,6 +96,25 @@ seaborn==0.13.2
 
 ## Análisis realizados
 
+
+### Análisis del flujo de datos
+
+Basado en los datos analizados hemos detectado los siguientes data flows:
+
+#### Cash
+![logo_ironhack_blue 7](./img/cash.png)
+
+
+#### Fees
+![logo_ironhack_blue 7](./img/fees.png)
+
+### Retención por cohorte de fechas
+
+Hemos analizado la tasa de retención por fecha de creación y vemos que a medida que más usuarios usan el servicio la tasa de retención aumenta, especialmente cuando aparece el módo instantáneo.
+
+![logo_ironhack_blue 7](./img/cohorte_retención.png)
+
+
 ### Ingresos de fees por cohorte:
 
 Hemos identificado que los ingresos por comisiones se generan a partir de mayo de 2020. Esto sugiere una posible actualización en la plataforma, introduciendo comisiones en ciertas acciones.
@@ -121,12 +140,48 @@ cohorte_month        Dinero adelantado por cohorte        Ingresos por cohorte
 2020-11                          5510.0                         320.0
 ```
 
+![logo_ironhack_blue 7](./img/cohorte_ingresos.png)
+
 ### Tasa de incidentes
 
 Este análisis proporciona una visión clara de cómo las incidencias han fluctuado a lo largo de las diferentes cohortes y meses, lo que puede ser útil para identificar áreas de mejora o tendencias emergentes. Principalmente, observamos patrones interesantes en la frecuencia de incidencias a lo largo del tiempo. Desde la cohorte de noviembre de 2019, vemos que las tasas de incidencia se mantienen en niveles bajos, aunque algunas cohortes muestran una leve tendencia al alza a lo largo del tiempo. A partir de junio de 2020, las tasas de incidencia comienzan a variar significativamente, con algunos meses mostrando picos de incidencia, especialmente en los ultimos cohortes de septiembre a noviembre del 2020. Esto sugiere una posible evolución en la calidad del servicio o cambios en el comportamiento de los usuarios, cosa que se intentará descifrar mediante otros análisis más en profundidad.
+
+![logo_ironhack_blue 7](./img/cohorte_incidencias.png)
+
+Se ha detectado que las incidencias aumentan cuando aparecen las cash request instantáneas:
+
+![logo_ironhack_blue 7](./img/cash_request_by_type.png)
+
+![logo_ironhack_blue 7](./img/incidences_by_month.png)
+
+### Tiempo de devolución
+
+Se ha estudiado qual es el tiempo de devolución medio por cada candiada de dinero prestada. Se ha detectado que la mayoria de prestamos son de 100 seguido por los prestamos de 50 y 25. De forma residual hay otros valores que no afectan al análisis.
+
+Con este análisis podemos determinar que el tiempo medio de devolución de cualquiera de las 3 cantidades es muy similar y que el margen de error es muy bajo
+
+![logo_ironhack_blue 7](./img/reutrntime_mean.png)
 
 ### Ver presentación:
 
 https://docs.google.com/presentation/d/1ox7HZiN0WBuuuxnf8aX9_pCW9yul1NdGvAOqMufhEdI/edit#slide=id.g2ddf4abf5e8_1_255
 
+### Retrospectiva
+
+https://miro.com/welcomeonboard/R21vOGppbWpKN1RqbUFoWkZBbEpnQ0xWZE52bDFaVkVwRXIzUlJ4SzVLcEMwS2w0NkdaZlpCWHRGYlFkSkd0RXwzNDU4NzY0NTg5NDY2MTAwNzg4fDI=?share_link_id=153360907613
+
 ## Conclusiones
+
+Dados estos análisis, podemos afirmar 3 conclusiones :
+
+    1 - Las incidencias se dan especialmente con las Cash Request Instantáneas.
+
+    2 - Añadir un fees basado en los portes adelantados podría aumentar de  manera exponencial los ingresos de la plataforma.
+
+    3 - Lanzar las campañas comerciales entre las 8 a 16 para maximizar retorno
+
+## Next Steps
+
+A partir de estos analísis, ahora deberíamos poder contrastar los datos con cliente para poder comentar los puntos analizados y ver, a nivel de negocio, porqué vemos estos datos (por ejemplo: motivos del status rejected)
+
+Más adelante creemos que sería interesante añadir datos de campañas de marketing para poder analizar cómo afecta a los cash requests. Por ejemplo: ¿el aumento de cash_requests en agosto es por vacaciones o porque hay nuevos cursos ironhack en septiembre?
